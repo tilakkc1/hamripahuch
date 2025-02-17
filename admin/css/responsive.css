@@ -1,0 +1,148 @@
+@media (max-width: 768px){
+	.main-head .logo_parts img{
+		max-width: 70%;
+		text-align: center;
+	}
+	.footer-block-full{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+		grid-column: unset;
+		display: block;
+		text-align: center;
+	}
+	.footer-content:not(:first-child) {
+		margin-top: 15px;
+	}
+	.sidenav.show {
+		width: 60%;
+		right: 0;
+	}
+	.headline{
+		padding: 6px 0;
+	}
+	.large-post .large_feature figure.image {
+		height: 300px;
+		background: #002285; */
+		width: 100%;
+		display: block;
+		transition: 0.2s all;
+	}
+	.banner-block .baanner_item .banner figure.image img{
+		height: auto !important;
+		width: 100%;
+		display: block;
+		background: #0d4f89;
+		transition: 0.2s all;
+	}
+	.banner-block .baanner_item .banner h1,
+	.heading h1{
+		font-size: 35px !important;
+	}
+	.desktop-search{
+		display: none;
+	}
+	.mobile-search{
+		display: block;
+	}
+	.feature_title h2{
+		font-size: 26px !important;
+	}
+	.sm-col-6{
+		width: 50% !important;
+		float: left !important;
+		padding: 10px !important;
+	}
+	.row.site_quick_link, .tulsipur_special .expert{
+		display: none;
+	}
+	.entertainment-post .feature_ent_fetch figure.image {
+		height: 250px;
+		width: 100%;
+		display: block;
+		background: #0d4f89;
+		transition: 0.2s all;
+		overflow: hidden;
+	}
+	.side_menu_open{
+		display: block;
+	}
+	.feature_data{
+		background-position: 50% 50% !important;
+		height: 250px !important;
+	}
+	.feature_fetch_title{
+		width: 100%;
+		background: rgba(0,0,0,0.6);
+		height: 100%;
+		padding: 40px;
+	}
+}
+
+@media (max-width: 576px){
+	.main-head .logo_parts img{
+		max-width: 70%;
+		text-align: center;
+	}
+	.footer-block-full{
+		grid-template-columns: repeat(1, 1fr);
+		grid-column: unset;
+		display: block;
+		text-align: center;
+	}
+	.footer-content:not(:first-child) {
+		margin-top: 15px;
+	}
+	.sidenav.show {
+		width: 60%;
+		right: 0;
+	}
+	.large-post .large_feature figure.image {
+		height: 300px;
+		background: #002285; */
+		width: 100%;
+		display: block;
+		transition: 0.2s all;
+	}
+	.pradesh_news_block, .tulsipur_special .expert{
+		display: none;
+	}
+	.banner-block .baanner_item .banner figure.image img{
+		height: auto !important;
+		width: 100%;
+		display: block;
+		background: #0d4f89;
+		transition: 0.2s all;
+	}
+	.banner-block .baanner_item .banner h1,
+	.heading h1{
+		font-size: 35px !important;
+	}
+	.desktop-search{
+		display: none;
+	}
+	.mobile-search{
+		display: block;
+	}
+	.feature_title h2{
+		font-size: 26px !important;
+	}
+	.sm-col-6{
+		width: 50% !important;
+		float: left !important;
+		padding: 10px !important;
+	}
+	.row.site_quick_link{
+		display: none;
+	}
+	.side_menu_open{
+		display: block;
+	}
+	.entertainment-post .feature_ent_fetch figure.image {
+		height: 250px;
+		width: 100%;
+		display: block;
+		background: #0d4f89;
+		transition: 0.2s all;
+		overflow: hidden;
+	}
+}
