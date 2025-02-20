@@ -72,6 +72,7 @@ function hamropahuch_new_scripts()
 	wp_enqueue_style('bootstrap', get_template_directory_uri() . '/admin/css/bootstrap.css');
 	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/admin/font-awesome/css/font-awesome.css');
 	wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Mukta:400,500,700&amp;subset=devanagari');
+	wp_enqueue_style('google-font-khand', 'https://fonts.googleapis.com/css2?family=Khand%3Awght%40400%3B600%3B700&display=swap&ver=6.7.2');
 	wp_enqueue_style('jQuery2', 'https://code.jquery.com/jquery-3.6.0.min.js');
 	wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/admin/js/bootstrap.js', array('jquery'), '4.5.0', true);
 	wp_enqueue_script('jquery', get_template_directory_uri() . '/admin/js/jquery.js', array('jquery'), '2.2.4', true);

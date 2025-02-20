@@ -18,8 +18,8 @@ License: GNU General Public License v2 or later
 	margin: 0 auto;
 }
 :root{
-	--tlt-primary: #0570b8;
-	--tlt-secondary : #e95f20;
+	--tlt-primary: #0345a9;
+	--tlt-secondary : #e74c3c;
 	--tlt-white: rgba(255,255,255,0.8);
 }
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -104,13 +104,10 @@ header.main-head{
 }
 .my-menu li.nav-item a.nav-link, 
 .my-menu .dropdown-menu .dropdown-item{
-	color: rgba(255,255,255,0.8) !important;
-	transition: .1s ease-in-out;
-	transition-property: color,background-color,border-color,box-shadow;
-	font-weight: 600;
-	font-size: 20px;
-	position: relative;
-	text-transform: none;
+		font-family: 'Khand', sans-serif !important;
+		font-size: 22px;
+		color: #fffffff5 !important;
+		font-weight: 600;
 }
 .social__data_icon ul li {
 	list-style: none;
@@ -285,7 +282,7 @@ header.main-head{
 	width: 100%;
 }
 .navbar-brand.tilak{
-	padding: 9.5px 18px !important;
+	padding: 10px 18px !important;
 	background: var(--tlt-secondary);
 }
 .my-menu li.nav-item {

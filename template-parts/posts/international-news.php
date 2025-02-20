@@ -1,33 +1,32 @@
-<div class="international_news_block bg-white h-100 p-3">
+<div class="international_news_block h-100">
 	<?php $cat_id = 9; ?>
 	<div class="category_item">
 		<div class="cat-name">
-			<a href="<?php echo get_category_link( $cat_id ); ?>"><?php echo get_cat_name( $cat_id ); ?></a>
+			<a href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
 		</div>
 	</div>
 	<div class="news-item-block">
-		<?php 
+		<?php
 		$args = array(
-			'post_type'      => 'post',
-			'post_status'    => 'publish',
-			'cat'            => $cat_id,
-			'showposts'      => '1',
-			'order'          => 'DESC',
-			'orderby'        => 'date'
+			'post_type' => 'post',
+			'post_status' => 'publish',
+			'cat' => $cat_id,
+			'showposts' => '1',
+			'order' => 'DESC',
+			'orderby' => 'date'
 		);
 		$loop = new WP_Query($args);
-		while($loop -> have_posts()):
-			$loop -> the_post();
+		while ($loop->have_posts()):
+			$loop->the_post();
 			?>
 			<div class="medium_news_item">
 				<div class="news_fetch">
 					<a href="<?php the_permalink(); ?>">
 						<figure class="image">
-							<?php 
-							if(has_post_thumbnail()){
+							<?php
+							if (has_post_thumbnail()) {
 								the_post_thumbnail('medium');
-							}
-							else{
+							} else {
 								default_image();
 							}
 							?>
@@ -47,7 +46,7 @@
 		wp_reset_postdata(); ?>
 		<div class="list-item-heal">
 			<ul class="list-unstyled mb-0">
-				<?php 
+				<?php
 				$args = array(
 					'cat' => $cat_id,
 					'posts_per_page' => 3,
@@ -56,9 +55,9 @@
 					'order' => 'DESC',
 				);
 				$loop = new WP_Query($args);
-				if($loop-> have_posts()):
-					while($loop-> have_posts()):
-						$loop-> the_post();
+				if ($loop->have_posts()):
+					while ($loop->have_posts()):
+						$loop->the_post();
 						?>
 						<li>
 							<div class="title-hel">
@@ -67,7 +66,7 @@
 								</a>
 							</div>
 						</li>
-						<?php 
+					<?php
 					endwhile;
 				endif;
 				wp_reset_postdata();

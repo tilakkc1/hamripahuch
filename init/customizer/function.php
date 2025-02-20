@@ -408,3 +408,114 @@ if (function_exists('acf_add_local_field_group')):
 		'show_in_rest' => 0,
 	));
 endif;
+add_action( 'acf/include_fields', function() {
+	if ( ! function_exists( 'acf_add_local_field_group' ) ) {
+		return;
+	}
+
+	acf_add_local_field_group( array(
+	'key' => 'group_67b705987ff77',
+	'title' => 'Radio Schedule',
+	'fields' => array(
+		array(
+			'key' => 'field_67b705983bfa6',
+			'label' => 'Program Start Time',
+			'name' => 'program_time_1',
+			'aria-label' => '',
+			'type' => 'time_picker',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '25',
+				'class' => '',
+				'id' => '',
+			),
+			'display_format' => 'g:i a',
+			'return_format' => 'g:i a',
+			'allow_in_bindings' => 0,
+		),
+		array(
+			'key' => 'field_67b705983bfa64',
+			'label' => 'Program End Time',
+			'name' => 'program_time_2',
+			'aria-label' => '',
+			'type' => 'time_picker',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '25',
+				'class' => '',
+				'id' => '',
+			),
+			'display_format' => 'g:i a',
+			'return_format' => 'g:i a',
+			'allow_in_bindings' => 0,
+		),
+		array(
+			'key' => 'field_67b705af3bfa7',
+			'label' => 'presenter_name',
+			'name' => 'presenter_name',
+			'aria-label' => '',
+			'type' => 'text',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '25',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'maxlength' => '',
+			'allow_in_bindings' => 0,
+			'placeholder' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+		array(
+			'key' => 'field_67b705c33bfa8',
+			'label' => 'contact_number',
+			'name' => 'contact_number',
+			'aria-label' => '',
+			'type' => 'number',
+			'instructions' => '',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '25',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+			'min' => '',
+			'max' => '',
+			'allow_in_bindings' => 0,
+			'placeholder' => '',
+			'step' => '',
+			'prepend' => '',
+			'append' => '',
+		),
+	),
+	'location' => array(
+		array(
+			array(
+				'param' => 'post_type',
+				'operator' => '==',
+				'value' => 'radio_programs',
+			),
+		),
+	),
+	'menu_order' => 0,
+	'position' => 'normal',
+	'style' => 'default',
+	'label_placement' => 'top',
+	'instruction_placement' => 'label',
+	'hide_on_screen' => '',
+	'active' => true,
+	'description' => '',
+	'show_in_rest' => 0,
+) );
+} );
+

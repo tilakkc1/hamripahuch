@@ -649,6 +649,7 @@ span.nepalio-date.text-line {
 }
 .cat-name a, .cat-name .cat{
 	color: var(--tlt-primary) !important;
+	font-family: 'Khand', sans-serif !important;
 }
 .cat-name:after {
 	background: var(--tlt-secondary);

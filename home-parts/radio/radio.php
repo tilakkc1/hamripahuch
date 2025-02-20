@@ -24,7 +24,7 @@
                     </div>
                 </div>
 
-                <audio id="radio-player" src="https://radio-broadcast.ekantipur.com/stream"></audio>
+                <audio id="radio-player" src="https://live.itech.host:8693/stream"></audio>
             </div>
         </div>
         <div class="col-md-4">

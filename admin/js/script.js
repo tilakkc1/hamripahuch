@@ -109,11 +109,11 @@ $(document).ready(function() {
         // Update volume icon based on level
         const volumeIcon = $('.volume-control i');
         if (volume === 0) {
-            volumeIcon.removeClass().addClass('fas fa-volume-mute');
+            volumeIcon.removeClass().addClass('fa fa-volume-mute');
         } else if (volume < 0.5) {
-            volumeIcon.removeClass().addClass('fas fa-volume-down');
+            volumeIcon.removeClass().addClass('fa fa-volume-down');
         } else {
-            volumeIcon.removeClass().addClass('fas fa-volume-up');
+            volumeIcon.removeClass().addClass('fa fa-volume-up');
         }
     });
 
