@@ -187,4 +187,69 @@ function hamropahuch_footer_customizer($wp_customize)
 	);
 }
 add_action('customize_register', 'hamropahuch_footer_customizer');
+function sanitize_checkbox($checked)
+{
 
+	return (isset($checked) && $checked == true) ? true : false;
+}
+
+function hamropahuch_radio_panel($wp_customize)
+{
+	// Add Customizer Panel
+	$wp_customize->add_panel(
+		'radio_panel',
+		array(
+			'title' => __('Radio Banner Setting', 'mytheme'),
+			'description' => __('Panel description', 'mytheme'),
+			'priority' => 42
+		)
+	);
+
+	// Add Section (Fix Conflict: Different Name Used)
+	$wp_customize->add_section(
+		'radio_banner_section',
+		array(
+			'title' => __('Banner Section', 'mytheme'),
+			'priority' => 411,
+			'panel' => 'radio_panel',
+		)
+	);
+
+	// Checkbox Setting (Enable Facebook Live)
+	$wp_customize->add_setting(
+		'check_url',
+		array(
+			'default' => false,
+			'sanitize_callback' => 'sanitize_checkbox',
+		)
+	);
+
+	$wp_customize->add_control(
+		'check_url',
+		array(
+			'label' => __('Facebook Live', 'mytheme'),
+			'section' => 'radio_banner_section', // ✅ Fixed Section Name
+			'type' => 'checkbox',
+		)
+	);
+
+	// Video URL Input
+	$wp_customize->add_setting(
+		'video_url',
+		array(
+			'default' => 'http://www.facebook.com/url',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+
+	$wp_customize->add_control(
+		'video_url',
+		array(
+			'label' => __('Add Video Live URL', 'mytheme'),
+			'section' => 'radio_banner_section', // ✅ Fixed Section Name
+			'type' => 'text',
+		)
+	);
+}
+
+add_action('customize_register', 'hamropahuch_radio_panel');

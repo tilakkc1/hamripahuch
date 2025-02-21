@@ -163,3 +163,36 @@ background: linear-gradient(135deg, #0345a9, #e74c3c);
         flex-direction: column;
     }
 }
+.repeat-img-list{
+    position: relative;
+}
+.repeat-img-list:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.88));
+}
+.feature .repeat-img-list img {
+    height: 350px;
+}
+.repeat-img-list img {
+    height: 465px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+}
+.repeat-img-list .title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 24px;
+}
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+}
