@@ -221,10 +221,10 @@
 	width: 100%;
 	color: #fff;
 }
-.topline_mfade_news h2 {
+.topline_mfade_news h4 {
 	color: #f8f9fa !important;
-	font-size: 32px;
-	font-weight: 900;
+	font-size: 22px;
+	font-weight: 600;
 }
 .topline_mfade_news img {
 	height: 100%;
@@ -721,7 +721,7 @@ ul.taja__news>li.news_item{
 	padding-bottom: 10px;
 	font-size: 18px;
 	font-weight: 600;
-	border-bottom: 1px #ddd solid;
+	border-bottom: 1px #acacac75 solid;
 }
 ul.taja__news>li.news_item:last-child{
 	border-bottom: none;

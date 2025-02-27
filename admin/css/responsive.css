@@ -3,6 +3,9 @@
 		max-width: 70%;
 		text-align: center;
 	}
+	.team_member_item {
+		grid-column: span 6 !important;
+	}
 	.footer-block-full{
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-columns: repeat(1, 1fr);
@@ -88,6 +91,9 @@
 		grid-column: unset;
 		display: block;
 		text-align: center;
+	}
+	.team_member_item {
+		grid-column: span 6 !important;
 	}
 	.footer-content:not(:first-child) {
 		margin-top: 15px;

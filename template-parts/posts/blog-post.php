@@ -1,5 +1,5 @@
-<div class="blogs-post-block py-3 px-2 h-100">
-	<?php $cat_id = 6; ?>
+<div class="blogs-post-block h-100">
+	<?php $cat_id = 5; ?>
 	<div class="category_item">
 		<div class="cat-name">
 			<a href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
@@ -38,7 +38,7 @@
 					<?php endif; ?>
 				</div>
 			</div>
-		<?php
+			<?php
 		endwhile;
 		wp_reset_postdata(); ?>
 	</div>

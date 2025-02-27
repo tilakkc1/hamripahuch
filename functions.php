@@ -37,6 +37,7 @@ add_action('after_setup_theme', 'hamropahuch_theme_setup');
 
 function hamropahuch_insert_posts_ad($content)
 {
+	global $adsCode;
 	if (is_single()) {
 		ob_start();
 		dynamic_sidebar('insidec2');

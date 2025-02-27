@@ -1,4 +1,7 @@
-<div class="banner-block">
+<div class="my-4">
+	<hr>
+</div>
+<div class="banner-block mt-3">
 	<?php if (is_active_sidebar('adv1')): ?>
 		<div class="advertisement-long mt-4 text-center">
 			<?php dynamic_sidebar('adv1'); ?>

@@ -16,17 +16,17 @@
 	<section class="main-news-section">
 		<?php get_template_part('template-parts/posts/main-news'); ?>
 	</section>
-	<section class="rajniti-section">
-		<?php get_template_part('template-parts/posts/rajniti-news'); ?>
+	<section class="local-section">
+		<?php get_template_part('template-parts/posts/local-news'); ?>
 	</section>
-	<section class="business-news-section">
-		<?php get_template_part('template-parts/posts/business-news'); ?>
+	<section class="rajniti-news-section">
+		<?php get_template_part('template-parts/posts/rajniti-news'); ?>
 	</section>
 	<section class="interviews-blog-section">
 		<?php get_template_part('template-parts/posts/interviews-news'); ?>
 	</section>
-	<section class="karnali-headline-section">
-		<?php get_template_part('template-parts/posts/karnali-headline'); ?>
+	<section class="pahuch-headline-section">
+		<?php get_template_part('template-parts/posts/bisesh-pahuch'); ?>
 	</section>
 	<section class="entertainment-news-section">
 		<?php get_template_part('template-parts/posts/entertainment-news'); ?>

@@ -1,18 +1,18 @@
 <footer class="colphan footer">
 	<div class="footer-block text-line mt-3">
-		<?php get_template_part( 'home-parts/footer' ); ?>
-		<div class="bottom-footer container-fluid py-3" style="background: #04578f !important">
+		<?php get_template_part('home-parts/footer'); ?>
+		<div class="bottom-footer container-fluid py-3" style="background: #092083 !important">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div class="copyright text-center text-md-left">
-							<p class="mb-0 text-line"> &copy;<script>document.write(new Date(). getFullYear());</script> <?php echo esc_html('haropahuch.com, All Rights Reserved.') ?></p>
-						</div>
-					</div>
-					<div class="col-md-4"></div>
-					<div class="col-lg-4 col-md-4 col-sm-12">
-						<div class="powred_by text-line text-md-right text-center">
-							<?php echo esc_html( 'Powered By :' ) ?> <a class="text-line" href="https://toplinetech.com.np/?ref=haropahuch.com" target="_blank"><?php echo esc_html( 'TopLine Technology' ); ?></a>
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="copyright text-center" style="color: rgba(255,255,255,.7);">
+							&copy;
+							<script>document.write(new Date().getFullYear());</script>
+							<?php echo esc_html('Haropahuch सर्वाधिकार हाम्रो पहुँच बहुउद्देश्यीय सहकारी संस्था लि.') ?>
+							|
+							<?php echo esc_html('Powered By :') ?> <a class="text-line"
+								href="https://toplinetech.com.np/?ref=haropahuch.com"
+								target="_blank"><?php echo esc_html('TopLine Technology'); ?></a>
 						</div>
 					</div>
 				</div>
@@ -22,8 +22,11 @@
 	</div>
 </footer>
 </div>
-<?php get_template_part( 'home-parts/skip-adv' ); ?>
-<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=6455d6ec8422190019dbb813&product=sop' async='async'></script>
+<?php get_template_part('home-parts/skip-adv'); ?>
+<script type='text/javascript'
+	src='https://platform-api.sharethis.com/js/sharethis.js#property=6455d6ec8422190019dbb813&product=sop'
+	async='async'></script>
 <?php wp_footer(); ?>
 </body>
+
 </html>

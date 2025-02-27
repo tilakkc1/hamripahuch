@@ -1,15 +1,15 @@
-<div class="business-block-wrap mt-3">
-	<?php $cat_id = 12; ?>
+<div class="news-block-wrap mt-3">
 	<div class="row">
-		<div class="col-lg-8 col-md-8 col-sm-12">
-			<div class="sports__block h-100">
+		<?php $cat_id = 11; ?>
+		<div class="col-lg-12 col-md-12 col-sm-12">
+			<div class="main-block h-100">
 				<div class="category_item">
 					<div class="cat-name">
 						<a href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="col-lg-5 col-md-7 col-sm-12">
 						<?php
 						$args = array(
 							'post_type' => 'post',
@@ -37,11 +37,11 @@
 									</a>
 								</div>
 								<div class="title_fetch text-center">
-									<h3 class="title">
+									<h2 class="title">
 										<a href="<?php the_permalink(); ?>">
 											<?php the_title(); ?>
 										</a>
-									</h3>
+									</h2>
 								</div>
 							</div>
 							<?php
@@ -49,7 +49,7 @@
 						wp_reset_postdata();
 						?>
 					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="col-lg-4 col-md-5 col-sm-12">
 						<div class="small_item_list">
 							<?php
 							$args = array(
@@ -86,16 +86,45 @@
 							?>
 						</div>
 					</div>
+					<div class="col-lg-3 col-md-5 col-sm-12">
+						<div class="list-item-heal">
+							<ul class="list-unstyled mb-0">
+								<?php
+								$args = array(
+									'cat' => $cat_id,
+									'posts_per_page' => 6,
+									'post_status' => 'publish',
+									'orderby' => 'date',
+									'order' => 'DESC',
+									'offset' => 5,
+								);
+								$loop = new WP_Query($args);
+								if ($loop->have_posts()):
+									while ($loop->have_posts()):
+										$loop->the_post();
+										?>
+										<li>
+											<div class="title-hel">
+												<a href="<?php the_permalink(); ?>">
+													<h5><?php the_title(); ?></h5>
+												</a>
+											</div>
+										</li>
+										<?php
+									endwhile;
+								endif;
+								wp_reset_postdata();
+								?>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-12">
-			<?php get_template_part('template-parts/posts/international-news'); ?>
-		</div>
 	</div>
-	<?php if (is_active_sidebar('adv8')): ?>
-		<div class="advertisement-long mt-3 text-center">
-			<?php dynamic_sidebar('adv8'); ?>
+	<?php if (is_active_sidebar('adv5')): ?>
+		<div class="advertisement-long mt-4 text-center">
+			<?php dynamic_sidebar('adv5'); ?>
 		</div>
 	<?php endif; ?>
 </div>

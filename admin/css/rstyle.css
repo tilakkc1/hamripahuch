@@ -5,7 +5,6 @@
 }
 
 .radio-player-card {
-background: linear-gradient(135deg, #0345a9, #e74c3c);
     align-items: center;
     justify-content: center;
     font-family: 'Arial', sans-serif;
@@ -69,7 +68,9 @@ background: linear-gradient(135deg, #0345a9, #e74c3c);
 .equalizer span:nth-child(5) {
     animation-delay: 0.4s;
 }
-
+.red{
+    color: var(--tlt-secondary);
+}
 .player-controls {
     display: flex;
     justify-content: center;
@@ -195,4 +196,12 @@ background: linear-gradient(135deg, #0345a9, #e74c3c);
     display: block;
     clear: both;
     content: "";
+}
+
+img.author_image{
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    border: 5px #CCC solid;
 }

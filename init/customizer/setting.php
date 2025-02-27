@@ -172,7 +172,7 @@ function hamropahuch_footer_customizer($wp_customize)
 	$wp_customize->add_setting(
 		'reg_number',
 		array(
-			'default' => '००/०७६-०७७',
+			'default' => '००/०७९-०८०',
 			'sanitize_callback' => 'sanitize_text_field',
 		)
 	);
@@ -181,6 +181,22 @@ function hamropahuch_footer_customizer($wp_customize)
 		'reg_number',
 		array(
 			'label' => 'सूचना विभाग दर्ता नं',
+			'section' => 'footer_section',
+			'type' => 'text',
+		)
+	);
+	$wp_customize->add_setting(
+		'preg_number',
+		array(
+			'default' => '००/०८०-०८१',
+			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+
+	$wp_customize->add_control(
+		'preg_number',
+		array(
+			'label' => 'प्रेस काउन्सिल सूचिकृत',
 			'section' => 'footer_section',
 			'type' => 'text',
 		)

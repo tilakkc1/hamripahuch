@@ -1,5 +1,5 @@
 <div class="interviews-block mt-4">
-	<?php $cat_id = 7; ?>
+	<?php $cat_id = 9; ?>
 	<div class="row">
 		<div class="col-lg-9 col-md-9 col-sm-12">
 			<div class="sports__block">
@@ -48,7 +48,7 @@
 									</figure>
 								</div>
 							</div>
-						<?php
+							<?php
 						endwhile;
 						wp_reset_postdata();
 						?>
@@ -88,7 +88,7 @@
 								</div>
 							</div>
 						</div>
-					<?php
+						<?php
 					endwhile;
 					wp_reset_postdata();
 					?>

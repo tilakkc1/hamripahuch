@@ -155,5 +155,14 @@ function hamropahuch_widgets_init_setup()
 		'before_title' => '<h2 class="widget-title">',
 		'after_title' => '</h2>',
 	));
+	register_sidebar(array(
+		'name' => esc_html__('टिम राख्न', 'hamropahuch'),
+		'id' => 'team',
+		'description' => esc_html__('Add widgets here.', 'hamropahuch'),
+		'before_widget' => '<section class="widget">',
+		'after_widget' => '</section>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
+	));
 }
 add_action('widgets_init', 'hamropahuch_widgets_init_setup');

@@ -18,15 +18,15 @@ License: GNU General Public License v2 or later
 	margin: 0 auto;
 }
 :root{
-	--tlt-primary: #0345a9;
-	--tlt-secondary : #e74c3c;
+	--tlt-primary: #1a3191;
+	--tlt-secondary : #69ca61;
 	--tlt-white: rgba(255,255,255,0.8);
 }
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
 	display: block;
 }
 body{
-	background: #f0f0f0!important;
+	background: #FFFFFF!important;
 	font-family: 'Mukta', sans-serif!important;
 	transition: background-color .5s !important;
 }

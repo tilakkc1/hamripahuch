@@ -3,11 +3,11 @@
 		<div class="heading">
 			<h1><?php the_title(); ?></h1>
 		</div>
-		<?php if(get_field('sub_title')): ?>
-									<div class="title_sub_single mt-2">
-										<h5 class="font-italic"><?php echo get_field('sub_title'); ?></h5>
-									</div>
-								<?php endif; ?>
+		<?php if (get_field('sub_title')): ?>
+			<div class="title_sub_single mt-2">
+				<h5 class="font-italic"><?php echo get_field('sub_title'); ?></h5>
+			</div>
+		<?php endif; ?>
 		<div class="share_author_block">
 			<div class="row">
 				<div class="col-lg-7 col-md-7 col-sm-12 mt-2">
@@ -15,24 +15,22 @@
 						<div class="author-meta">
 							<div class="author-img">
 								<?php
-								if(get_field('writer_image')){
+								if (get_field('writer_image')) {
 									$writer_image = get_field('writer_image');
-									echo '<img src="'.$writer_image.'" class="writer_image">';
-								}
-								else{
+									echo '<img src="' . $writer_image . '" class="writer_image">';
+								} else {
 									$author_id = get_the_author_meta('ID');
-									$author_badge = get_field('author_image', 'user_'. $author_id );
-									echo '<img src="'.$author_badge.'" class="writer_image">';
+									$author_badge = get_field('author_image', 'user_' . $author_id);
+									echo '<img src="' . $author_badge . '" class="writer_image">';
 								}
 								?>
 							</div>
 							<span class="author-name">
-								<?php if(get_field('writer_name')){
+								<?php if (get_field('writer_name')) {
 									echo get_field('writer_name');
-								}
-								else{
+								} else {
 									echo the_author_posts_link();
-								} 
+								}
 								?>
 							</span>
 						</div>

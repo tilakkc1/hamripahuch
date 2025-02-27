@@ -1,5 +1,5 @@
 <div class="international_news_block h-100">
-	<?php $cat_id = 9; ?>
+	<?php $cat_id = 13; ?>
 	<div class="category_item">
 		<div class="cat-name">
 			<a href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
@@ -66,7 +66,7 @@
 								</a>
 							</div>
 						</li>
-					<?php
+						<?php
 					endwhile;
 				endif;
 				wp_reset_postdata();
