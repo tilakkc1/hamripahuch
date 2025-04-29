@@ -64,6 +64,62 @@ function hamropahuch_insert_posts_ad($content)
 
 add_filter('the_content', 'hamropahuch_insert_posts_ad');
 
+function hamropahuch_insert_posts_ad2($content)
+{
+	global $adsCode;
+	if (is_single()) {
+		ob_start();
+		dynamic_sidebar('insidec3');
+		$sidebar = ob_get_contents();
+		ob_end_clean();
+		if (is_active_sidebar('insidec3')):
+			$adsCode = "<div class='advertisement-long text-center'>" . $sidebar . "</div>";
+		endif;
+		$insertAfter = 4;
+		$closingP = '</p>';
+		$contentBlock = explode($closingP, $content);
+		foreach ($contentBlock as $key => $con) {
+			if (trim($con)) {
+				$contentBlock[$key] .= $closingP;
+			}
+			if (($key + 1) == $insertAfter) {
+				$contentBlock[$key] .= $adsCode;
+			}
+		}
+		$content = implode(' ', $contentBlock);
+	}
+	return $content;
+}
+
+add_filter('the_content', 'hamropahuch_insert_posts_ad2');
+function hamropahuch_insert_posts_ad3($content)
+{
+	global $adsCode;
+	if (is_single()) {
+		ob_start();
+		dynamic_sidebar('insidec4');
+		$sidebar = ob_get_contents();
+		ob_end_clean();
+		if (is_active_sidebar('insidec4')):
+			$adsCode = "<div class='advertisement-long text-center'>" . $sidebar . "</div>";
+		endif;
+		$insertAfter = 4;
+		$closingP = '</p>';
+		$contentBlock = explode($closingP, $content);
+		foreach ($contentBlock as $key => $con) {
+			if (trim($con)) {
+				$contentBlock[$key] .= $closingP;
+			}
+			if (($key + 1) == $insertAfter) {
+				$contentBlock[$key] .= $adsCode;
+			}
+		}
+		$content = implode(' ', $contentBlock);
+	}
+	return $content;
+}
+
+add_filter('the_content', 'hamropahuch_insert_posts_ad3');
 function hamropahuch_new_scripts()
 {
 	wp_enqueue_style('my-style', get_stylesheet_uri());

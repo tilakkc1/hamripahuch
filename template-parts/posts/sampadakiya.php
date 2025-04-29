@@ -1,9 +1,16 @@
 <div class="my-4">
     <hr>
 </div>
-<section class="feature_file feature mt-3">
-    <?php $cat_id = 22; ?>
+<div class="feature_file feature mt-3">
+    <?php $cat_id = 23; ?>
     <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="category_item">
+                <div class="cat-name">
+                    <a href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
+                </div>
+            </div>
+        </div>
         <?php
         $args = array(
             'post_type' => 'post',
@@ -33,4 +40,4 @@
         wp_reset_postdata();
         ?>
     </div>
-</section>
+</div>

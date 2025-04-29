@@ -38,7 +38,7 @@ function hamropahuch_widgets_init_setup()
 		'after_title' => '</h2>',
 	));
 	register_sidebar(array(
-		'name' => esc_html__('विज्ञापन मुख्य समाचार भन्दा तल', 'hamropahuch'),
+		'name' => esc_html__('विज्ञापन समाचार भन्दा तल', 'hamropahuch'),
 		'id' => 'adv3',
 		'description' => esc_html__('Add widgets here.', 'hamropahuch'),
 		'before_widget' => '<section class="widget">',
@@ -47,7 +47,7 @@ function hamropahuch_widgets_init_setup()
 		'after_title' => '</h2>',
 	));
 	register_sidebar(array(
-		'name' => esc_html__('विज्ञापन मुख्य समाचारको दायाँ तिर', 'hamropahuch'),
+		'name' => esc_html__('विज्ञापन समाचारको दायाँ तिर', 'hamropahuch'),
 		'id' => 'adv4',
 		'description' => esc_html__('Add widgets here.', 'hamropahuch'),
 		'before_widget' => '<section class="widget">',
@@ -140,6 +140,24 @@ function hamropahuch_widgets_init_setup()
 	register_sidebar(array(
 		'name' => esc_html__('विज्ञापन दोस्रो प्याराग्राफको तल', 'hamropahuch'),
 		'id' => 'insidec2',
+		'description' => esc_html__('Add widgets here.', 'hamropahuch'),
+		'before_widget' => '<section class="widget">',
+		'after_widget' => '</section>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
+	));
+	register_sidebar(array(
+		'name' => esc_html__('विज्ञापन तेस्रो प्याराग्राफको तल', 'hamropahuch'),
+		'id' => 'insidec3',
+		'description' => esc_html__('Add widgets here.', 'hamropahuch'),
+		'before_widget' => '<section class="widget">',
+		'after_widget' => '</section>',
+		'before_title' => '<h2 class="widget-title">',
+		'after_title' => '</h2>',
+	));
+	register_sidebar(array(
+		'name' => esc_html__('विज्ञापन चौथो प्याराग्राफको तल', 'hamropahuch'),
+		'id' => 'insidec4',
 		'description' => esc_html__('Add widgets here.', 'hamropahuch'),
 		'before_widget' => '<section class="widget">',
 		'after_widget' => '</section>',

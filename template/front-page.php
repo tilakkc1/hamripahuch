@@ -22,8 +22,14 @@
 	<section class="rajniti-news-section">
 		<?php get_template_part('template-parts/posts/rajniti-news'); ?>
 	</section>
+	<section class="sahakari-accident-section">
+		<?php get_template_part('template-parts/posts/sahakari-accident'); ?>
+	</section>
 	<section class="interviews-blog-section">
 		<?php get_template_part('template-parts/posts/interviews-news'); ?>
+	</section>
+	<section class="sampadakiya-section">
+		<?php get_template_part('template-parts/posts/sampadakiya'); ?>
 	</section>
 	<section class="pahuch-headline-section">
 		<?php get_template_part('template-parts/posts/bisesh-pahuch'); ?>
@@ -41,7 +47,7 @@
 		<?php get_template_part('template-parts/posts/technology-news'); ?>
 	</section>
 	<section class="photo-feature-section">
-		<?php get_template_part('template-parts/posts/photo-feature'); ?>
+		<?php //get_template_part('template-parts/posts/photo-feature'); ?>
 	</section>
 </div>
 <?php get_footer(); ?>

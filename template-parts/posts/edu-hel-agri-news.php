@@ -2,12 +2,11 @@
 	<div class="news-block-grid mt-4">
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<?php $cat_id = 29; ?>
+				<?php $cat_id = 15; ?>
 				<div class="news-box item__row">
 					<div class="category_item">
 						<div class="cat-name">
-							<a
-								href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
+							<a href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
 						</div>
 					</div>
 					<div class="news-item-block">
@@ -41,7 +40,7 @@
 									</h5>
 								</div>
 							</div>
-						<?php
+							<?php
 						endwhile;
 						wp_reset_postdata();
 						?>
@@ -49,12 +48,11 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<?php $cat_id = 12; ?>
+				<?php $cat_id = 21; ?>
 				<div class="news-box item__row">
 					<div class="category_item">
 						<div class="cat-name">
-							<a
-								href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
+							<a href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
 						</div>
 					</div>
 					<div class="news-item-block">
@@ -88,7 +86,7 @@
 									</h5>
 								</div>
 							</div>
-						<?php
+							<?php
 						endwhile;
 						wp_reset_postdata();
 						?>
@@ -96,12 +94,11 @@
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-12">
-				<?php $cat_id = 63; ?>
-				<div class="news-box bg-white p-3 item__row">
+				<?php $cat_id = 18; ?>
+				<div class="news-box bg-white item__row">
 					<div class="category_item">
 						<div class="cat-name">
-							<a
-								href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
+							<a href="<?php echo get_category_link($cat_id); ?>"><?php echo get_cat_name($cat_id); ?></a>
 						</div>
 					</div>
 					<div class="news-item-block">
@@ -135,7 +132,7 @@
 									</h5>
 								</div>
 							</div>
-						<?php
+							<?php
 						endwhile;
 						wp_reset_postdata();
 						?>

@@ -1,6 +1,6 @@
 <div class="news-block-main mt-4">
-	<?php $cat_id = 31; ?>
-	<div class="entertainment-block" style="background: #314252">
+	<?php $cat_id = 16; ?>
+	<div class="entertainment-block p-3" style="background: #314252">
 		<div class="enter_body">
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12">
@@ -51,7 +51,7 @@
 							</div>
 						</div>
 					</div>
-				<?php
+					<?php
 				endwhile;
 				wp_reset_postdata();
 				?>

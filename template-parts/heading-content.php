@@ -34,6 +34,10 @@
 								?>
 							</span>
 						</div>
+						<div class="published-date ml-3 mt-1 text-muted">
+							<span class="pub-date text-muted"> |</span> <span class="ml-2">
+								<?php post_publish_convert_date(get_the_date('', get_the_ID())); ?></span>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-5 col-md-5 col-sm-12">

@@ -8,7 +8,7 @@
 						<div class="copyright text-center" style="color: rgba(255,255,255,.7);">
 							&copy;
 							<script>document.write(new Date().getFullYear());</script>
-							<?php echo esc_html('Haropahuch सर्वाधिकार हाम्रो पहुँच बहुउद्देश्यीय सहकारी संस्था लि.') ?>
+							<?php echo esc_html('Haropahuch.com सर्वाधिकार हाम्रो पहुँच बहुउद्देश्यीय सहकारी संस्था लि.') ?>
 							|
 							<?php echo esc_html('Powered By :') ?> <a class="text-line"
 								href="https://toplinetech.com.np/?ref=haropahuch.com"

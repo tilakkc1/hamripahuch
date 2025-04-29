@@ -1,6 +1,6 @@
 <div class="technology_news mt-4">
 	<div class="tech-block son__headline">
-		<?php $cat_id = 11; ?>
+		<?php $cat_id = 24; ?>
 		<div class="row">
 			<div class="col-lg-12 col-sm-12 col-md-12">
 				<div class="category_item">
@@ -47,7 +47,7 @@
 						</div>
 					</div>
 				</div>
-			<?php
+				<?php
 			endwhile;
 			wp_reset_postdata();
 			?>

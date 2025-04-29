@@ -1,3 +1,6 @@
+<div class="my-3">
+	<hr>
+</div>
 <div class="business-block mt-3">
 	<div class="buss-block son__headline">
 		<?php $cat_id = 3; ?>
