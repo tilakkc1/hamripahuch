@@ -19,7 +19,7 @@
 				<i class="fa fa-clock-o mr-2"></i>
 				<span class="text-light" style="font-size: 12px !important;"><?php echo time_ago(); ?> </span>
 			</div>
-			<li class=" news_item" style="font-size: 17px !important;">
+			<li class=" news_item" style="font-size: 19px !important;">
 				<a class="text-light" href="<?php the_permalink(); ?>">
 					<?php the_title(); ?>
 				</a>
@@ -35,7 +35,7 @@
 		padding: 20px;
 		background: rgba(255, 255, 255, 0.05);
 		border: 1px solid rgba(255, 255, 255, 0.15);
-		max-height: 320px;
+		max-height: 380px;
 		overflow-y: auto;
 		scrollbar-color: #0345a9;
 		border-radius: 4px;

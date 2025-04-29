@@ -10,9 +10,7 @@
 	<section class="banner-news-section">
 		<?php get_template_part('template-parts/posts/banner-block'); ?>
 	</section>
-	<section class="feature-news-section">
 		<?php get_template_part('template-parts/posts/feature'); ?>
-	</section>
 	<section class="main-news-section">
 		<?php get_template_part('template-parts/posts/main-news'); ?>
 	</section>
@@ -45,9 +43,6 @@
 	</section>
 	<section class="edu-hel-agri-section">
 		<?php get_template_part('template-parts/posts/technology-news'); ?>
-	</section>
-	<section class="photo-feature-section">
-		<?php //get_template_part('template-parts/posts/photo-feature'); ?>
 	</section>
 </div>
 <?php get_footer(); ?>

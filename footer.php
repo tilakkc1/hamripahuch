@@ -21,12 +21,14 @@
 		<div id="return-to-top" class="btn-top" style="display: block;"><i class="fa fa-angle-double-up"></i></div>
 	</div>
 </footer>
-</div>
+<button class="play-pause-btn fixed" style="position: fixed; right: 0; top: 50%; z-index: 999;">
+		<i class="fa fa-play"></i>
+	</button>
+	<audio id="radio-player" src="https://live.itech.host:8693/stream"></audio>
 <?php get_template_part('home-parts/skip-adv'); ?>
-<script type='text/javascript'
-	src='https://platform-api.sharethis.com/js/sharethis.js#property=6455d6ec8422190019dbb813&product=sop'
-	async='async'></script>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=67c489536eb4310012fdda1f&product=sop' async='async'></script>
 <?php wp_footer(); ?>
+</div>
 </body>
 
 </html>

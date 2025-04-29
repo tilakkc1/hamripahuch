@@ -17,7 +17,6 @@
 				'post_status' => 'publish',
 				'order' => 'DESC',
 				'orderby' => 'date',
-				'offset' => '1',
 			);
 			$loop = new WP_Query($args);
 			while ($loop->have_posts()):

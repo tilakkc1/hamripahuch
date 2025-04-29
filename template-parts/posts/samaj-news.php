@@ -102,7 +102,7 @@
 				'post_status' => 'publish',
 				'order' => 'DESC',
 				'orderby' => 'date',
-				'offset' => '1'
+				'offset' => '5'
 			);
 			$loop = new WP_Query($args);
 			while ($loop->have_posts()):

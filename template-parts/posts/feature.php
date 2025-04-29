@@ -1,6 +1,3 @@
-<div class="my-4">
-    <hr>
-</div>
 <section class="feature_file feature mt-3">
     <?php $cat_id = 22; ?>
     <div class="row">

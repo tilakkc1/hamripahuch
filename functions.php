@@ -20,6 +20,29 @@ function hamropahuch_theme_setup()
 register_nav_menus(array(
 	'primary' => __('Primary Menu', 'hamropahuch'),
 ));
+define( 'DISALLOW_FILE_EDIT', true );
+
+function hideUnncessaryMenuItems () {
+	global $menu;
+	$itemsToHIDE = array(
+		('Tools'),
+		('ACF'),
+	//	('Settings'),
+		//('Plugins'),
+		('Grow'),
+		('SCF')
+	);
+	end ($menu);
+	while (prev($menu)){
+		$value = explode(
+			' ',
+			$menu[key($menu)][0]);
+		if(in_array($value[0] != NULL?$value[0]:"" , $itemsToHIDE)){
+			unset($menu[key($menu)]);
+		}
+	}
+}
+add_action('admin_menu', 'hideUnncessaryMenuItems');
 function default_image()
 {
 	$directory = get_template_directory_uri() . '/admin/image/default.jpg';
@@ -46,7 +69,7 @@ function hamropahuch_insert_posts_ad($content)
 		if (is_active_sidebar('insidec2')):
 			$adsCode = "<div class='advertisement-long text-center'>" . $sidebar . "</div>";
 		endif;
-		$insertAfter = 2;
+		$insertAfter = 1;
 		$closingP = '</p>';
 		$contentBlock = explode($closingP, $content);
 		foreach ($contentBlock as $key => $con) {
@@ -75,7 +98,7 @@ function hamropahuch_insert_posts_ad2($content)
 		if (is_active_sidebar('insidec3')):
 			$adsCode = "<div class='advertisement-long text-center'>" . $sidebar . "</div>";
 		endif;
-		$insertAfter = 4;
+		$insertAfter = 3;
 		$closingP = '</p>';
 		$contentBlock = explode($closingP, $content);
 		foreach ($contentBlock as $key => $con) {

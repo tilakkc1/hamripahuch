@@ -1,6 +1,3 @@
-<div class="my-4">
-	<hr>
-</div>
 <div class="banner-block mt-3">
 	<?php if (is_active_sidebar('adv1')): ?>
 		<div class="advertisement-long mt-4 text-center">
@@ -88,15 +85,15 @@
 						</div>
 					</div>
 				</div>
-				<?php
+	</div>
+	<?php
 		endwhile;
 	endif;
 	wp_reset_postdata();
 	?>
-		<?php if (is_active_sidebar('adv2')): ?>
+	<?php if (is_active_sidebar('adv2')): ?>
 			<div class="advertisement-long text-center mt-4">
 				<?php dynamic_sidebar('adv2'); ?>
 			</div>
 		<?php endif; ?>
-	</div>
 </div>

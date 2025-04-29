@@ -41,6 +41,14 @@
 								<ul class="list-unstyled team-name">
 									<?php dynamic_sidebar('team'); ?>
 								</ul>
+								<ul class="list-unstyled quick_link mb-0">
+								<li>
+								    <a href="<?php echo site_url() ?>/our-team">हाम्रो टिम</a>
+								</li>
+								<li>
+								    <a href="<?php echo site_url() ?>/about-us">हाम्रो बारेमा </a>
+								</li>
+							</ul>
 							</address>
 						</div>
 					</div>

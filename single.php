@@ -26,9 +26,5 @@
 			</div>
 		</div>
 	</div>
-	<button class="play-pause-btn fixed" style="position: fixed; right: 0; top: 50%; z-index: 999;">
-		<i class="fa fa-play"></i>
-	</button>
-	<audio id="radio-player" src="https://live.itech.host:8693/stream"></audio>
 </section>
 <?php get_footer();
